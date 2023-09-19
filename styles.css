@@ -52,3 +52,11 @@ li {
     text-align: center;
     font-weight: bold;
 }
+
+.submitanswer:hover {
+    background-color: red;
+}
+
+li:hover {
+    background-color: red;
+}
