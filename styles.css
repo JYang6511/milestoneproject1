@@ -37,7 +37,7 @@ li {
 
 
 
-.submitanswer {
+.nextquestion {
         display: block;
         margin: 0 auto;
         padding: 10px 20px;
@@ -53,10 +53,29 @@ li {
     font-weight: bold;
 }
 
-.submitanswer:hover {
+.nextquestion:hover {
     background-color: red;
 }
 
 li:hover {
     background-color: red;
+}
+
+.start {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #27ae60;
+}
+
+.start:hover {
+    background-color: red;
+}
+
+.containerhide {
+    display: none;
 }

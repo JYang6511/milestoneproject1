@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css">
-    <script src="./script.js"></script>
     <title>SPORTS TRIVIA</title>
 </head>
 <body>
-    <div class="container">
+    <div class="containerhide" id="questions">
         <h1>NFL/NBA TRIVIA GAME</h1>
     <div class="questionsdiv"> 
         <p class="questions">questions go here</p>
@@ -21,9 +20,10 @@
             <li></li>
         </ul>
     </div>
-        <button type="button" class="submitanswer">Submit Answer</button>
+        <button type="button" class="nextquestion">NEXT</button>
         <p class="score">Score: 0</p>
     </div>
-
+    <button type="button" id="start" class="start">START</button>
+    <script src="./script.js"></script>
 </body>
 </html>
