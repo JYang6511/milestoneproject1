@@ -49,7 +49,6 @@ const questions = [
         answers: ["One", "Five", "Three", "Four"],
         correctAnswer: "Four",
     },
-
 ];
 
 let startButton = document.querySelector(".start");
@@ -58,9 +57,9 @@ let questionElement = document.querySelector(".questions");
 let answersElement = document.querySelector(".answers");
 let scoreElement = document.querySelector(".score");
 let nextButton = document.querySelector(".nextquestion");
+let scoreCardElement = document.querySelector(".scorecard")
 let currentQuestionIndex = 0 ;
 let score = 0;
-
 
 
 startButton.addEventListener('click', startGame)
@@ -77,7 +76,6 @@ function nextQuestion(questionIndex) {
     questionElement.textContent = question.question;
     answersElement.innerHTML=""
 
-
     question.answers.forEach((answer, index) => {
         let answerChoice = document.createElement("li")
         answerChoice.textContent = answer;
@@ -85,7 +83,6 @@ function nextQuestion(questionIndex) {
         answersElement.appendChild(answerChoice)
         
     })
-
 }
 
 function chooseAnswer(userAnswer, correctAnswer) {
@@ -95,7 +92,6 @@ function chooseAnswer(userAnswer, correctAnswer) {
     } else {
         alert(`Incorrect, the correct answer is ${correctAnswer}`)
     }
-   
     updateScore();
 }
 
@@ -105,7 +101,7 @@ function updateScore() {
     scoreElement.textContent = `Score: ${score}`;
 }
 
-function endGame() {
+async function endGame() {
     questionElement.textContent = "Quiz Over!";
     answersElement.innerHTML = "";
     nextButton.style.display = "none";
@@ -113,11 +109,9 @@ function endGame() {
 }
 
 nextButton.addEventListener("click", () => {
-
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        nextQuestion(currentQuestionIndex);
-       
+        nextQuestion(currentQuestionIndex);    
     } else {
         endGame();
     }
