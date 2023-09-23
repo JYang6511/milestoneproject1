@@ -20,7 +20,7 @@ const questions = [
         correctAnswer: "Tom Brady",
     },
     {
-        question: "Which player in the NBA was nicknamed the Black Mamba?",
+        question: "Which player in the NBA was nicknamed The Black Mamba?",
         answers: ["Kobe Bryant", "Magic Johnson", "Lebron James", "Paul Pierce"],
         correctAnswer: "Kobe Bryant",
     },
@@ -35,19 +35,19 @@ const questions = [
         correctAnswer: "Roger Goodell",
     },
     {
-        question: "Which team won the first Super Bowl?",
-        answers: ["Green Bay Packers", "Kansas City Chiefs", "San Francisco 49ers", "Pittsburgh Steelers"],
-        correctAnswer: "Green Bay Packers",
+        question: "How many total games in a NFL Season?",
+        answers: ["157 games", "190 games", "272 games", "300 games"],
+        correctAnswer: "272 games",
     },
     {
-        question: "Which team won the first Super Bowl?",
-        answers: ["Green Bay Packers", "Kansas City Chiefs", "San Francisco 49ers", "Pittsburgh Steelers"],
-        correctAnswer: "Green Bay Packers",
+        question: "What does the acronym NBA stand for?",
+        answers: ["National Basketball Association", "No Beef Allowed", "National Basketball Academy", "No Body Asked"],
+        correctAnswer: "National Basketball Association",
     },
     {
-        question: "Which team won the first Super Bowl?",
-        answers: ["Green Bay Packers", "Kansas City Chiefs", "San Francisco 49ers", "Pittsburgh Steelers"],
-        correctAnswer: "Green Bay Packers",
+        question: "How many times has a NFL team gone undefeated during a regular season? (not including playoffs)",
+        answers: ["One", "Five", "Three", "Four"],
+        correctAnswer: "Four",
     },
 
 ];
