@@ -16,6 +16,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 .questionsdiv {
@@ -24,15 +25,23 @@ h1 {
          text-align: center; 
     }
 
+.questions {
+    font-size: 20px;
+}
 
 
 li {
-        margin: 15px 0;
+        margin: 0 auto;
         cursor: pointer;
-        padding: 10px;
+        padding: 30px;
         background-color: #d8db34;
         color: black;
-        border-radius: 111px;
+        border-radius: 79px;
+        width: 50%;
+        text-align: center; 
+        list-style: none;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
 
