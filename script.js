@@ -58,7 +58,7 @@ let answersElement = document.querySelector(".answers");
 let scoreElement = document.querySelector(".score");
 let nextButton = document.querySelector(".nextquestion");
 let scoreCardElement = document.querySelector(".scorecard")
-let currentQuestionIndex = 0 ;
+let currentQuestionIndex = 0;
 let score = 0;
 
 
@@ -90,18 +90,16 @@ function chooseAnswer(userAnswer, correctAnswer) {
         score++;
         alert("Correct!")
     } else {
-        alert(`Incorrect, the correct answer is ${correctAnswer}`)
+        alert(`WRONG! The correct answer is ${correctAnswer}.`)
     }
     updateScore();
 }
-
-
 
 function updateScore() {
     scoreElement.textContent = `Score: ${score}`;
 }
 
-async function endGame() {
+function endGame() {
     questionElement.textContent = "Quiz Over!";
     answersElement.innerHTML = "";
     nextButton.style.display = "none";

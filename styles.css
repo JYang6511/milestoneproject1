@@ -26,7 +26,8 @@ h1 {
     }
 
 .questions {
-    font-size: 20px;
+    font-size: 30px;
+    color: rgb(1, 8, 17);
 }
 
 
@@ -60,6 +61,8 @@ li {
 .score {
     text-align: center;
     font-weight: bold;
+    font-size: 30px;
+    color: #91ff00;
 }
 
 .nextquestion:hover {
@@ -71,14 +74,14 @@ li:hover {
 }
 
 .start {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 20px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  background-color: #27ae60;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #27ae60;
 }
 
 .start:hover {
@@ -89,6 +92,16 @@ li:hover {
     display: none;
 }
 
+#start {
+    margin-top: 450px;
+    margin-bottom: 100px;
+}
+
 .scorecard {
-    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center; 
+  
 }
