@@ -49,6 +49,10 @@ const questions = [
         answers: ["One", "Five", "Three", "Four"],
         correctAnswer: "Four",
     },
+    {  question: "",
+       answers: [],
+       correctAnswer: "",
+    }
 ];
 
 let startButton = document.querySelector(".start");
@@ -56,7 +60,7 @@ let questionContainer = document.querySelector("#questionsdiv");
 let questionElement = document.querySelector(".questions");
 let answersElement = document.querySelector(".answers");
 let scoreElement = document.querySelector(".score");
-let nextButton = document.querySelector(".nextquestion");
+let restartButton = document.querySelector(".restart");
 let scoreCardElement = document.querySelector(".scorecard")
 let currentQuestionIndex = 0;
 let score = 0;
@@ -88,11 +92,15 @@ function nextQuestion(questionIndex) {
 function chooseAnswer(userAnswer, correctAnswer) {
     if (userAnswer === correctAnswer) {
         score++;
+        currentQuestionIndex++;
+        nextQuestion(currentQuestionIndex);
     } else {
         currentQuestionIndex++;
         nextQuestion(currentQuestionIndex);
     }
+    
     updateScore();
+    endGame()
 }
 
 function updateScore() {
@@ -100,17 +108,15 @@ function updateScore() {
 }
 
 function endGame() {
+    if (currentQuestionIndex === 10 ) {
+      
+    
     questionElement.textContent = "Game Over!";
     answersElement.innerHTML = "";
-    nextButton.style.display = "none";
     updateScore();
+    }
 }
 
-nextButton.addEventListener("click", () => {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        nextQuestion(currentQuestionIndex);    
-    } else {
-        endGame();
-    }
+restartButton.addEventListener("click", () => {
+    location.reload();
 });
