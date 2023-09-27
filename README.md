@@ -4,6 +4,6 @@ There are a total of 10 questions.
 
 
 Instructions:  
-Click START
-Answer questions accordingly, click next to move onto the next question.
-Once quiz is over, compare points with score card for your rating!
+1. Click START
+2. Answer questions accordingly, click next to move onto the next question.
+3. Once quiz is over, compare points with score card for your rating!
