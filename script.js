@@ -100,7 +100,7 @@ function updateScore() {
 }
 
 function endGame() {
-    questionElement.textContent = "Quiz Over!";
+    questionElement.textContent = "Game Over!";
     answersElement.innerHTML = "";
     nextButton.style.display = "none";
     updateScore();

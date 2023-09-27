@@ -38,7 +38,7 @@ li {
         background-color: #d8db34;
         color: black;
         border-radius: 79px;
-        width: 50%;
+        width: 40%;
         text-align: center; 
         list-style: none;
         font-size: 20px;
@@ -93,7 +93,7 @@ li:hover {
 }
 
 #start {
-    margin-top: 450px;
+    margin-top: 290px;
     margin-bottom: 100px;
 }
 
@@ -104,4 +104,18 @@ li:hover {
     justify-content: center;
     text-align: center; 
   
+}
+
+.lebron {
+    height: 15%;
+    width: 15%;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.brady {
+    height: 23%;
+    width: 20%;
+    padding-left: 1000px;
+    padding-bottom: 250px;
 }
