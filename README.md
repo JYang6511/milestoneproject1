@@ -5,6 +5,6 @@ There are a total of 10 questions.
 
 Instructions:  
 1. Click START
-2. Answer questions accordingly. If your choice is wrong, the game will proceed to the next question.  
-3. If you answer correctly you will accumulate one point, click NEXT to continue. 
-4. Once quiz is over, compare points with score card for your rating!
+2. Answer questions accordingly, you accumluate 1 point for each correct answer 
+3. Once quiz is over, compare points with score card for your rating!
+
