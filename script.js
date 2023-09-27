@@ -88,9 +88,9 @@ function nextQuestion(questionIndex) {
 function chooseAnswer(userAnswer, correctAnswer) {
     if (userAnswer === correctAnswer) {
         score++;
-        alert("Correct!")
     } else {
-        alert(`WRONG! The correct answer is ${correctAnswer}.`)
+        currentQuestionIndex++;
+        nextQuestion(currentQuestionIndex);
     }
     updateScore();
 }
