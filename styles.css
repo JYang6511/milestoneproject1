@@ -91,6 +91,12 @@ li:hover {
     color: white;
 }
 
+.restart:hover{
+    background-color: red;
+    color: white;
+
+}
+
 .containerhide {
     display: none;
 }

@@ -80,11 +80,11 @@ function nextQuestion(questionIndex) {
     questionElement.textContent = question.question;
     answersElement.innerHTML=""
 
-    question.answers.forEach((answer, index) => {
-        let answerChoice = document.createElement("li")
-        answerChoice.textContent = answer;
-        answerChoice.addEventListener("click", () => chooseAnswer(answer, question.correctAnswer));
-        answersElement.appendChild(answerChoice)
+        question.answers.forEach((answer, index) => {
+            let answerChoice = document.createElement("li")
+            answerChoice.textContent = answer;
+            answerChoice.addEventListener("click", () => chooseAnswer(answer, question.correctAnswer));
+            answersElement.appendChild(answerChoice)
         
     })
 }
@@ -109,11 +109,9 @@ function updateScore() {
 
 function endGame() {
     if (currentQuestionIndex === 10 ) {
-      
-    
-    questionElement.textContent = "Game Over!";
-    answersElement.innerHTML = "";
-    updateScore();
+        questionElement.textContent = "Game Over!";
+        answersElement.innerHTML = "";
+        updateScore();
     }
 }
 
