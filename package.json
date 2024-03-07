@@ -1,0 +1,15 @@
+{
+  "name": "milestoneproject1",
+  "version": "1.0.0",
+  "description": "Do you consider yourself a NFL or NBA fan??? Test your knowledge with this quiz!!\r There are a total of 10 questions.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

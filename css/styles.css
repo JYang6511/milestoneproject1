@@ -1,0 +1,106 @@
+body {
+  font-family: Trebuchet MS, "Gill Sans", sans-serif;
+  background: #1fc8d4;
+  color: #083a85;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.questionsdiv {
+  margin: 30px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.questions {
+  font-size: 30px;
+  color: rgb(1, 8, 17);
+}
+
+li {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 30px;
+  background-color: #d0e701;
+  color: black;
+  border-radius: 79px;
+  width: 40%;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.restart {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #91ff00;
+}
+
+li:hover {
+  background-color: red;
+  color: white;
+}
+
+.start {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #27ae60;
+}
+
+.start:hover,
+.restart:hover {
+  background-color: red;
+  color: white;
+}
+
+.containerhide {
+  display: none;
+}
+
+#start {
+  margin-top: 290px;
+  margin-bottom: 100px;
+}
+
+.scorecard {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.lebron {
+  height: 15%;
+  width: 15%;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.brady {
+  height: 23%;
+  width: 20%;
+  padding-left: 1000px;
+  padding-bottom: 250px;
+}/*# sourceMappingURL=styles.css.map */
