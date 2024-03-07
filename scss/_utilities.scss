@@ -1,0 +1,8 @@
+
+@import "config"; 
+
+@mixin scale-hover($scale-factor: 0.8) {
+  &:hover {
+    transform: scale($scale-factor);
+  }
+}

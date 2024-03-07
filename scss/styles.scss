@@ -1,4 +1,5 @@
 @import "config";
+@import "utilities";
 
 body {
     font-family: $font-stack;
@@ -23,6 +24,7 @@ h1 {
 }
 
 li {
+    @include scale-hover(0.8);
     margin: 0 auto;
     cursor: pointer;
     padding: 30px;
@@ -72,6 +74,7 @@ li:hover {
 
 .start:hover,
 .restart:hover {
+    @include scale-hover(0.8);
     background-color: red;
     color: white;
 }
