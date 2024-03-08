@@ -51,7 +51,7 @@ li:hover {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  background-color: #27ae60;
+  background-color: #0d833e;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -68,6 +68,7 @@ li:hover {
 li:hover {
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.8);
   background-color: red;
   color: white;
 }
@@ -80,7 +81,7 @@ li:hover {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background-color: #27ae60;
+  background-color: #89e5b0;
 }
 
 .start:hover,
