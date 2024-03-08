@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: Trebuchet MS, "Gill Sans", sans-serif;
   background: #1fc8d4;
@@ -21,6 +29,8 @@ h1 {
 }
 
 li {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
   margin: 0 auto;
   cursor: pointer;
   padding: 30px;
@@ -56,6 +66,8 @@ li:hover {
 }
 
 li:hover {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
   background-color: red;
   color: white;
 }
@@ -73,6 +85,8 @@ li:hover {
 
 .start:hover,
 .restart:hover {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
   background-color: red;
   color: white;
 }

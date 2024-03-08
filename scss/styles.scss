@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "animations";
 
 body {
     font-family: $font-stack;
@@ -25,6 +26,7 @@ h1 {
 
 li {
     @include scale-hover(0.8);
+    @include fadein(2.0s);
     margin: 0 auto;
     cursor: pointer;
     padding: 30px;
@@ -57,6 +59,7 @@ li {
 }
 
 li:hover {
+    @include fadein(2.0s);
     background-color: red;
     color: white;
 }
@@ -75,6 +78,7 @@ li:hover {
 .start:hover,
 .restart:hover {
     @include scale-hover(0.8);
+    @include fadein(1.0s);
     background-color: red;
     color: white;
 }

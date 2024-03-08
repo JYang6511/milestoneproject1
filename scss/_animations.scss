@@ -1,35 +1,14 @@
-// _animations.scss
-
-// Define animation-related mixins
-@mixin rotate($degrees) {
-    @include prefix(transition, transform 0.3s ease);
-    transform: rotate($degrees);
+@mixin fadein($duration: 1s) {
+    opacity: 0;
+    animation: fadeIn $duration ease-in-out forwards;
   }
   
-  @mixin fadeIn {
-    @include prefix(animation, fadein 1s);
-  }
-  
-  @mixin fadeOut {
-    @include prefix(animation, fadeout 1s);
-  }
-  
-  // Define keyframe animations
-  @keyframes fadein {
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
-    }
-  }
-  
-  @keyframes fadeout {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
     }
   }
   
