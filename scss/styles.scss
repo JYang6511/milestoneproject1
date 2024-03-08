@@ -131,4 +131,6 @@ body {
         padding-left: 1000px;
         padding-bottom: 250px;
     }
+    
+    @error "Something went wrong! Check that code";
 }
