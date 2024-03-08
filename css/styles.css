@@ -11,24 +11,20 @@ body {
   background: #1fc8d4;
   color: #083a85;
 }
-
-h1 {
+body h1 {
   text-align: center;
   font-size: 50px;
 }
-
-.questionsdiv {
+body .questionsdiv {
   margin: 30px 0;
   margin-bottom: 30px;
   text-align: center;
 }
-
-.questions {
+body .questionsdiv .questions {
   font-size: 30px;
   color: rgb(1, 8, 17);
 }
-
-li {
+body li {
   border: 8px solid rgb(37, 161, 48);
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
@@ -44,11 +40,17 @@ li {
   font-size: 20px;
   margin-bottom: 15px;
 }
-li:hover {
+body li:hover {
   transform: scale(0.8);
 }
-
-.restart {
+body li:hover {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.8);
+  background-color: red;
+  color: white;
+}
+body .restart {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
@@ -58,23 +60,13 @@ li:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.score {
+body .score {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   color: #91ff00;
 }
-
-li:hover {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.8);
-  background-color: red;
-  color: white;
-}
-
-.start {
+body .start {
   border: 8px groove rgb(161, 37, 124);
   font-size: 1.5em;
   font-weight: bold;
@@ -85,44 +77,45 @@ li:hover {
   margin: 0 auto;
   background-color: #89e5b0;
 }
-
-.start:hover,
-.restart:hover {
+body .start:hover {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   background-color: red;
   color: white;
 }
-.start:hover:hover,
-.restart:hover:hover {
+body .start:hover:hover {
   transform: scale(0.8);
 }
-
-.containerhide {
+body .restart:hover {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  background-color: red;
+  color: white;
+}
+body .restart:hover:hover {
+  transform: scale(0.8);
+}
+body .containerhide {
   display: none;
 }
-
-#start {
+body #start {
   margin-top: 290px;
   margin-bottom: 100px;
 }
-
-.scorecard {
+body .scorecard {
   font-size: 20px;
   font-weight: bold;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
 }
-
-.lebron {
+body .lebron {
   height: 15%;
   width: 15%;
   padding-left: 100px;
   padding-bottom: 100px;
 }
-
-.brady {
+body .brady {
   height: 23%;
   width: 20%;
   padding-left: 1000px;
