@@ -24,7 +24,13 @@ h1 {
     color: rgb(1, 8, 17);
 }
 
+$showBorder: true;
+
+
 li {
+    @if $showBorder {
+        border: 8px solid rgb(37, 161, 48);
+    }
     @include scale-hover(0.8);
     @include fadein(2.0s);
     margin: 0 auto;
@@ -73,6 +79,9 @@ $lightenedColor: lighten($baseColor, 30%);
 
 
 .start {
+    @if $showBorder {
+        border: 8px groove rgb(161, 37, 124);
+    }
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
@@ -82,6 +91,8 @@ $lightenedColor: lighten($baseColor, 30%);
     margin: 0 auto;
     background-color:$lightenedColor;
 }
+
+$showBorder: true;
 
 .start:hover,
 .restart:hover {
@@ -100,6 +111,7 @@ $lightenedColor: lighten($baseColor, 30%);
     margin-bottom: 100px;
 }
 
+
 .scorecard {
     font-size: 20px;
     font-weight: bold;
@@ -107,6 +119,7 @@ $lightenedColor: lighten($baseColor, 30%);
     justify-content: center;
     text-align: center;
 }
+
 
 .lebron {
     height: 15%;

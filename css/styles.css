@@ -29,6 +29,7 @@ h1 {
 }
 
 li {
+  border: 8px solid rgb(37, 161, 48);
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
   margin: 0 auto;
@@ -74,6 +75,7 @@ li:hover {
 }
 
 .start {
+  border: 8px groove rgb(161, 37, 124);
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px 20px;
