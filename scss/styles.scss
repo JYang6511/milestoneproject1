@@ -2,6 +2,11 @@
 @import "utilities";
 @import "animations";
 
+
+@function double($number) {
+    @return $number * 2;
+  }
+
 body {
     font-family: $font-stack;
     background: $light-color;
@@ -106,6 +111,7 @@ body {
     }
 
     #start {
+        width: double(47px);
         margin-top: 290px;
         margin-bottom: 100px;
     }
@@ -132,5 +138,5 @@ body {
         padding-bottom: 250px;
     }
     
-    @error "Something went wrong! Check that code";
+    
 }

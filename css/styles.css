@@ -99,6 +99,7 @@ body .containerhide {
   display: none;
 }
 body #start {
+  width: 94px;
   margin-top: 290px;
   margin-bottom: 100px;
 }
