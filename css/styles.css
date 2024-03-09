@@ -89,6 +89,7 @@ body .start:hover:hover {
 body .restart:hover {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
+  width: 94px;
   background-color: red;
   color: white;
 }
