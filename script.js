@@ -1,8 +1,9 @@
 const questions = [
+    // Array containing quiz questions, each question object has a question, answers, and correctAnswer property
     {
-        question: "Most points scored by a player in a NBA game?",
-        answers: ["81", "100", "65", "92"],
-        correctAnswer: "100",
+        question: "Most points scored by a player in a NBA game?", // Question
+        answers: ["81", "100", "65", "92"], // Array of answer choices
+        correctAnswer: "100", // Correct answer
     },
     {
         question: "Which NBA player is the NBA logo modeled after?",
@@ -55,66 +56,72 @@ const questions = [
     }
 ];
 
-let startButton = document.querySelector(".start");
-let questionContainer = document.querySelector("#questionsdiv");
-let questionElement = document.querySelector(".questions");
-let answersElement = document.querySelector(".answers");
-let scoreElement = document.querySelector(".score");
-let restartButton = document.querySelector(".restart");
-let scoreCardElement = document.querySelector(".scorecard")
-let currentQuestionIndex = 0;
-let score = 0;
+let startButton = document.querySelector(".start"); // Selecting the start button
+let questionContainer = document.querySelector("#questionsdiv"); // Selecting the question container
+let questionElement = document.querySelector(".questions"); // Selecting the question element
+let answersElement = document.querySelector(".answers"); // Selecting the answers element
+let scoreElement = document.querySelector(".score"); // Selecting the score element
+let restartButton = document.querySelector(".restart"); // Selecting the restart button
+let scoreCardElement = document.querySelector(".scorecard") // Selecting the score card element
+let currentQuestionIndex = 0; // Variable to keep track of current question index
+let score = 0; // Variable to keep track of score
 
-
+// Event listener for the start button
 startButton.addEventListener('click', startGame)
 
+// Function to start the game
 function startGame() {
-    startButton.classList.add("containerhide");
-    questionContainer.classList.remove("containerhide");
-    currentQuestionIndex = 0;
-    nextQuestion(currentQuestionIndex)
+    startButton.classList.add("containerhide"); // Hide the start button
+    questionContainer.classList.remove("containerhide"); // Show the question container
+    currentQuestionIndex = 0; // Reset current question index
+    nextQuestion(currentQuestionIndex) // Call nextQuestion function to display the first question
 }
 
+// Function to display the next question
 function nextQuestion(questionIndex) {
-    let question = questions[questionIndex]
-    questionElement.textContent = question.question;
-    answersElement.innerHTML=""
+    let question = questions[questionIndex]; // Get the current question object
+    questionElement.textContent = question.question; // Display the question
+    answersElement.innerHTML="" // Clear previous answer choices
 
-        question.answers.forEach((answer, index) => {
-            let answerChoice = document.createElement("li")
-            answerChoice.textContent = answer;
-            answerChoice.addEventListener("click", () => chooseAnswer(answer, question.correctAnswer));
-            answersElement.appendChild(answerChoice)
-        
+    // Loop through answer choices and create list items for each
+    question.answers.forEach((answer, index) => {
+        let answerChoice = document.createElement("li"); // Create list item element
+        answerChoice.textContent = answer; // Set the text content of the list item to the answer choice
+        answerChoice.addEventListener("click", () => chooseAnswer(answer, question.correctAnswer)); // Add event listener to handle answer selection
+        answersElement.appendChild(answerChoice); // Append the answer choice to the answers element
     })
 }
 
+// Function to handle user's answer choice
 function chooseAnswer(userAnswer, correctAnswer) {
-    if (userAnswer === correctAnswer) {
-        score++;
-        currentQuestionIndex++;
-        nextQuestion(currentQuestionIndex);
+    if (userAnswer === correctAnswer) { // If the user's answer is correct
+        score++; // Increment the score
+        currentQuestionIndex++; // Move to the next question
+        nextQuestion(currentQuestionIndex); // Display the next question
     } else {
-        currentQuestionIndex++;
-        nextQuestion(currentQuestionIndex);
+        currentQuestionIndex++; // Move to the next question regardless of correctness
+        nextQuestion(currentQuestionIndex); // Display the next question
     }
     
-    updateScore();
-    endGame()
+    updateScore(); // Update the displayed score
+    endGame(); // Check if the game has ended
 }
 
+// Function to update the displayed score
 function updateScore() {
-    scoreElement.textContent = `Score: ${score}`;
+    scoreElement.textContent = `Score: ${score}`; // Display the score
 }
 
+// Function to check if the game has ended
 function endGame() {
-    if (currentQuestionIndex === 10 ) {
-        questionElement.textContent = "Game Over!";
-        answersElement.innerHTML = "";
-        updateScore();
+    if (currentQuestionIndex === 10 ) { // If all questions have been answered
+        questionElement.textContent = "Game Over!"; // Display "Game Over!"
+        answersElement.innerHTML = ""; // Clear answer choices
+        updateScore(); // Update the displayed score
     }
 }
 
+// Event listener for the restart button
 restartButton.addEventListener("click", () => {
-    location.reload();
+    location.reload(); // Reload the page to restart the game
 });
