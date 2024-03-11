@@ -1,4 +1,4 @@
-# MilestoneProject1
+# MilestoneProject1  
 Do you consider yourself a NFL or NBA fan??? Test your knowledge with this quiz!!
 There are a total of 10 questions.  
 
@@ -7,6 +7,33 @@ Instructions:
 1. Click START
 2. Answer questions accordingly, you accumluate 1 point for each correct answer 
 3. Once quiz is over, compare points with score card for your rating!
+
+
+## Technologies
+- HTML
+- CSS (SCSS)
+- JavaScript
+
+## Technical Information
+The application is built using HTML, CSS (SCSS), and JavaScript. Here's an overview of the main components and functionalities:
+
+- **HTML**: The structure of the application, including elements for questions, answers, buttons, and score display.
+- **CSS (SCSS)**: Stylesheets to enhance the visual appearance of the application, including layout, colors, and animations.
+- **JavaScript**: The logic behind the quiz game, including functionality to start the game, display questions, handle user input, update the score, and end the game.
+
+### Components
+- **Start Button**: Initiates the game when clicked.
+- **Questions Container**: Displays the current question.
+- **Answers**: Multiple-choice options for the user to select.
+- **Score**: Keeps track of the user's score.
+- **Restart Button**: Allows the user to restart the game after completing it.
+
+### Functionality
+- **Starting the Game**: Clicking the start button triggers the game.
+- **Displaying Questions**: Questions are displayed one at a time, with corresponding answer choices.
+- **Handling User Input**: Users can select an answer by clicking on it.
+- **Scoring**: The application tracks the user's score based on correct answers.
+- **Ending the Game**: The game ends after all questions have been answered, and the final score is displayed.
 
 
 
