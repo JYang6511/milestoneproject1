@@ -4,7 +4,11 @@ There are a total of 10 questions.
 
 
 ## Description
-The Sports Quiz Game is a simple web application where users can test their knowledge of sports trivia. The game presents a series of multiple-choice questions related NBA and NFL trivia. Users select their answers, and the game keeps track of their score. At the end of the game, users can see their final score and compare it to a scorecard. 
+The Sports Quiz Game is a simple web application where users can test their knowledge of sports trivia. The game presents a series of multiple-choice questions related to NBA and NFL trivia. Users select their answers, and the game keeps track of their score. At the end of the game, users can see their final score and compare it to a scorecard. 
+
+
+## Demo
+[Live Demo](https://jyang6511.github.io/MilestoneProject1/)
 
 
 ## Technologies
@@ -32,6 +36,12 @@ The application is built using HTML, CSS (SCSS), and JavaScript. Here's an overv
 - **Handling User Input**: Users can select an answer by clicking on it.
 - **Scoring**: The application tracks the user's score based on correct answers.
 - **Ending the Game**: The game ends after all questions have been answered, and the final score is displayed.
+
+
+## API Documentation
+The application does not utilize any external APIs, but the internal logic and functionality are documented within the source code.
+
+For detailed information on application endpoints and functionality, refer to the source code comments and documentation provided within the JavaScript files.
 
 
 
@@ -71,3 +81,4 @@ Changelog
 * Added CSS, JS
 # Sep 16, 2023
 * Initial commit
+
