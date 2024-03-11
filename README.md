@@ -11,38 +11,38 @@ Instructions:
 
 
 Changelog
-Mar 9, 2024
+# Mar 9, 2024
 Added function
-Mar 7, 2024
+# Mar 7, 2024
 Added error code
 Nested everything
 Added flow directives
 Added functions and mixins
 Added mixins
-Mar 6, 2024
+# Mar 6, 2024
 Added mixins
 Converted to SCSS
-Sep 27, 2023
+# Sep 27, 2023
 CSS styling
 Uploaded website
 Updated README
 Added restart button, fixed CSS and HTML
 Got rid of alerts and cleaned up choose answer function
 Updated README and added images
-Sep 25, 2023
+# Sep 25, 2023
 Added score card
 Cleaned up CSS
-Sep 23, 2023
+# Sep 23, 2023
 Cleaned up code
 Finished questions
 Updated score function and end game function
-Sep 20, 2023
+# Sep 20, 2023
 Added answers
-Got questions to display
+Got questions to display 
 Added start button and questions
-Sep 18, 2023
+# Sep 18, 2023
 JS brainstorming to add questions
 Added HTML and CSS
 Added CSS, JS
-Sep 16, 2023
+# Sep 16, 2023
 Initial commit
