@@ -56,6 +56,8 @@ For detailed information on application endpoints and functionality, refer to th
 # Changelog
 
 ## Mar 11, 2024
+- added issues section
+- updated changelog
 - Added demo link and API information
 - Updated description
 - Added overview, features, technologies, and functionality sections
