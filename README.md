@@ -1,12 +1,10 @@
-# MilestoneProject1  
+# MilestoneProject1  - SPORTS QUIZ TRIVIA
 Do you consider yourself a NFL or NBA fan??? Test your knowledge with this quiz!!
 There are a total of 10 questions.  
 
 
-Instructions:  
-1. Click START
-2. Answer questions accordingly, you accumluate 1 point for each correct answer 
-3. Once quiz is over, compare points with score card for your rating!
+## Description
+The Sports Quiz Game is a simple web application where users can test their knowledge of sports trivia. The game presents a series of multiple-choice questions related NBA and NFL trivia. Users select their answers, and the game keeps track of their score. At the end of the game, users can see their final score and compare it to a scorecard. 
 
 
 ## Technologies
