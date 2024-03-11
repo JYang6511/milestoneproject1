@@ -37,6 +37,14 @@ The application is built using HTML, CSS (SCSS), and JavaScript. Here's an overv
 - **Scoring**: The application tracks the user's score based on correct answers.
 - **Ending the Game**: The game ends after all questions have been answered, and the final score is displayed.
 
+## Issues
+- NO BUGS CURRENTLY 
+- Encountered issues getting questions to display in JavaScript.
+- Difficulty handling user input and checking answers.
+- Challenge implementing a scoring system.
+- Trouble styling the quiz interface for optimal user experience.
+- Difficulty managing game logic and flow.
+- Would have liked to implement a two-player function if I had time.
 
 ## API Documentation
 The application does not utilize any external APIs, but the internal logic and functionality are documented within the source code.
